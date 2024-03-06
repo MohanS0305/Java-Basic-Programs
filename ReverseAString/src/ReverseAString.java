@@ -1,15 +1,21 @@
 import java.util.*;
-public class ReverseAString {
 
+/**
+ * 
+ */
+class ReverseAString {
 	public static void main(String[] args) {
-		String str="MOHAN";
-		String revstr="";
-		int i;
-		for(i=str.length()-1;i>=0;i--) {
-		revstr=revstr+str.charAt(i);
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter any name");
+		String name = input.nextLine(); // string input 
+		input.close();
+		String revString = ""; // empty string for reverse string
+		
+		// take each character of a string using for loop
+		for(int i = name.length()-1; i >= 0; i--) { // reverse the loop for reverse the string
+				revString += name.charAt(i); // add each character to revString 
 		}
-		System.out.println("Original String "+str);
-		System.out.println("Reverse String "+revstr);
-
+		System.out.print(revString); // print the revString
 	}
+	
 }

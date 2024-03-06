@@ -5,7 +5,7 @@ public class CheckTwoArray {
 	public static void main(String[] args) {
 
 		int[] ar1 = { 1, 2, 3, 4, 5, 6, 7 };
-		int[] ar2 = { 1, 2, 3, 4, 5, 6, 7 };
+		int[] ar2 = { 1, 2, 3, 4, 5, 6, 7};
 
 		System.out.println(checkTwoArray(ar1, ar2));
 	}
